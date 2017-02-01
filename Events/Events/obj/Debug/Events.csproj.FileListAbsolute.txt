@@ -1,0 +1,7 @@
+F:\GIT\SELF\myrepo\Events\Events\Events\bin\Debug\Events.exe.config
+F:\GIT\SELF\myrepo\Events\Events\bin\Debug\Events.exe.config
+F:\GIT\SELF\myrepo\Events\Events\bin\Debug\Events.exe
+F:\GIT\SELF\myrepo\Events\Events\bin\Debug\Events.pdb
+F:\GIT\SELF\myrepo\Events\Events\obj\Debug\Events.csprojResolveAssemblyReference.cache
+F:\GIT\SELF\myrepo\Events\Events\obj\Debug\Events.exe
+F:\GIT\SELF\myrepo\Events\Events\obj\Debug\Events.pdb
