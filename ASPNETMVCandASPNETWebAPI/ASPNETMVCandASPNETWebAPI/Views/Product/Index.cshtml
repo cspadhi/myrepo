@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @Html.ActionLink("Search Product", "Search", "Product")
+        <br />
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+
+            @foreach(var p in ViewBag.result)
+            {
+                <tr>
+                    <td>@p.Id</td>
+                    <td>@p.Name</td>
+                    <td>@p.Price</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
