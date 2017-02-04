@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeService", "EmployeeService\EmployeeService.csproj", "{B74BA090-42F6-4622-895C-04C332A0FA48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{AA11129C-CEA0-4397-B69C-4B26919100CA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B74BA090-42F6-4622-895C-04C332A0FA48} = {B74BA090-42F6-4622-895C-04C332A0FA48}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B74BA090-42F6-4622-895C-04C332A0FA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B74BA090-42F6-4622-895C-04C332A0FA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B74BA090-42F6-4622-895C-04C332A0FA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B74BA090-42F6-4622-895C-04C332A0FA48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA11129C-CEA0-4397-B69C-4B26919100CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA11129C-CEA0-4397-B69C-4B26919100CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA11129C-CEA0-4397-B69C-4B26919100CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA11129C-CEA0-4397-B69C-4B26919100CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
