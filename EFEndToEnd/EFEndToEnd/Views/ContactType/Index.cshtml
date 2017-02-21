@@ -1,0 +1,23 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Contact Types";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Contact Types</h2>
+<div> 
+  <button id="createTypeButton">Create</button>
+</div>
+<table id="typesGrid">
+</table>
+<div id="typesPager">
+</div>
+@section Scripts { 
+
+<script type="text/javascript">
+    $().ready(function () {
+        contactManagement.init();
+    });
+</script>
+}

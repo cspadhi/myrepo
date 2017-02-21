@@ -1,0 +1,60 @@
+﻿@using System.Collections
+@model EFEndToEnd.Business.Models.Contact
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    
+    <fieldset>
+        <legend>Contact</legend>
+
+        @Html.HiddenFor(model => model.ContactId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LastName)
+            @Html.ValidationMessageFor(model => model.LastName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FirstName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContactTypeId)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.ContactTypeId, new SelectList((IEnumerable)ViewData["ContactTypeId"], "ContactTypeId", "Name", Model.ContactTypeId))
+            @Html.ValidationMessageFor(model => model.ContactTypeId)
+        </div>
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IsActive)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IsActive)
+            @Html.ValidationMessageFor(model => model.IsActive)
+        </div>
+
+        <p>
+            <input type="submit" value="Update" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

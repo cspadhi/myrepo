@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFEndToEnd", "EFEndToEnd\EFEndToEnd.csproj", "{E2470DFF-FD94-4EA2-B429-ACF09719B65A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFEndToEnd.Data", "EFEndToEnd.Data\EFEndToEnd.Data.csproj", "{3276A8A0-B89E-4F32-9A94-ABA8A1342708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFEndToEnd.DataAccess", "EFEndToEnd.DataAccess\EFEndToEnd.DataAccess.csproj", "{C3CA177E-1A5B-4C96-ABC1-7439A4A5B4DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFEndToEnd.Business", "EFEndToEnd.Business\EFEndToEnd.Business.csproj", "{61D87DAB-DDF0-4FAC-A6E1-1A2676B6CF1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFEndToEnd.Common", "EFEndToEnd.Common\EFEndToEnd.Common.csproj", "{9741269D-A827-46A5-A755-2AD512BD9444}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://sergeybarskiy.tfspreview.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EFEndToEnd.Data\\EFEndToEnd.Data.csproj
+		SccProjectName1 = EFEndToEnd.Data
+		SccLocalPath1 = EFEndToEnd.Data
+		SccProjectUniqueName2 = EFEndToEnd.DataAccess\\EFEndToEnd.DataAccess.csproj
+		SccProjectName2 = EFEndToEnd.DataAccess
+		SccLocalPath2 = EFEndToEnd.DataAccess
+		SccProjectUniqueName3 = EFEndToEnd\\EFEndToEnd.csproj
+		SccProjectName3 = EFEndToEnd
+		SccLocalPath3 = EFEndToEnd
+		SccProjectUniqueName4 = EFEndToEnd.Business\\EFEndToEnd.Business.csproj
+		SccProjectName4 = EFEndToEnd.Business
+		SccLocalPath4 = EFEndToEnd.Business
+		SccProjectUniqueName5 = EFEndToEnd.Common\\EFEndToEnd.Common.csproj
+		SccProjectName5 = EFEndToEnd.Common
+		SccLocalPath5 = EFEndToEnd.Common
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2470DFF-FD94-4EA2-B429-ACF09719B65A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2470DFF-FD94-4EA2-B429-ACF09719B65A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2470DFF-FD94-4EA2-B429-ACF09719B65A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2470DFF-FD94-4EA2-B429-ACF09719B65A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3276A8A0-B89E-4F32-9A94-ABA8A1342708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3276A8A0-B89E-4F32-9A94-ABA8A1342708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3276A8A0-B89E-4F32-9A94-ABA8A1342708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3276A8A0-B89E-4F32-9A94-ABA8A1342708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3CA177E-1A5B-4C96-ABC1-7439A4A5B4DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3CA177E-1A5B-4C96-ABC1-7439A4A5B4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3CA177E-1A5B-4C96-ABC1-7439A4A5B4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3CA177E-1A5B-4C96-ABC1-7439A4A5B4DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D87DAB-DDF0-4FAC-A6E1-1A2676B6CF1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D87DAB-DDF0-4FAC-A6E1-1A2676B6CF1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D87DAB-DDF0-4FAC-A6E1-1A2676B6CF1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D87DAB-DDF0-4FAC-A6E1-1A2676B6CF1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9741269D-A827-46A5-A755-2AD512BD9444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9741269D-A827-46A5-A755-2AD512BD9444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9741269D-A827-46A5-A755-2AD512BD9444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9741269D-A827-46A5-A755-2AD512BD9444}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
