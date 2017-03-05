@@ -1,0 +1,39 @@
+﻿@model EFEndToEnd.Business.Models.Contact
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    
+    <fieldset>
+        <legend>Contact Type</legend>
+        @Html.HiddenFor(model => model.ContactId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LastName)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayTextFor(model => model.LastName)
+        </div>
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FirstName)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayTextFor(model => model.FirstName)
+        </div>
+
+        <p>
+            <input type="submit" value="Delete" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
