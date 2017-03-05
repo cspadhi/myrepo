@@ -13,3 +13,6 @@ C:\Projects\EntityFramework\Queries\Queries\obj\Debug\Queries.csproj.GenerateRes
 F:\GIT\SELF\myrepo\RepositoryPattern\Queries\bin\Debug\Queries.exe.config
 F:\GIT\SELF\myrepo\RepositoryPattern\Queries\obj\Debug\Queries.exe
 F:\GIT\SELF\myrepo\RepositoryPattern\Queries\obj\Debug\Queries.pdb
+E:\GIT\SELF\myrepo\RepositoryPattern\Queries\bin\Debug\Queries.exe.config
+E:\GIT\SELF\myrepo\RepositoryPattern\Queries\obj\Debug\Queries.exe
+E:\GIT\SELF\myrepo\RepositoryPattern\Queries\obj\Debug\Queries.pdb

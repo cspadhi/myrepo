@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+
+    if(!Request.QueryString["lang"].IsEmpty())
+    {
+        Culture = UICulture = Request.QueryString["lang"];
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <a href="@Url.Action("Index", "Home", new { lang = "en"})">English</a> |
+        <a href="@Url.Action("Index", "Home", new { lang = "fr"})">France</a> |
+        <a href="@Url.Action("Index", "Home", new { lang = "de"})">German</a> |
+        <a href="@Url.Action("Index", "Home", new { lang = "ja"})">Japan</a> | 
+
+        @{
+            int number = 1234567;
+            double percentage = 88.23;
+            int currency = 121345;
+        }
+        <br />
+        Format of number: @number.ToString("N")
+        <br />
+        Format of percentage: @percentage.ToString("P")
+        <br />
+        Format of currency: @currency.ToString("C")
+        <br />
+        Format of date: @DateTime.Now.ToString("D")
+        <br />
+
+        
+    </div>
+</body>
+</html>
