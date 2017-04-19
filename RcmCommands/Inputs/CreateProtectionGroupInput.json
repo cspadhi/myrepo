@@ -1,0 +1,9 @@
+{
+  "Id": "%protectiongroupid%",
+  "AppConsistencyInterval": "00:30:00",
+  "CrashConsistencyInterval": "00:15:00",
+  "IsMultiVmConsistencyEnabled": false,
+  "RetentionPeriod": "1.00:00:00",
+  "ProtectionServiceUri": "%protectionserviceuri%",
+  "ProtectionServiceLocation": "%protectionservicelocation%"
+}

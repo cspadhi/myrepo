@@ -1,0 +1,14 @@
+{
+  "%machineid%": "System.Guid,2e3024d1-3fee-494b-9dab-5ea0252147b1",
+  "%protectionpairid%": "System.Guid,3a3024d1-3fee-494b-9dab-5ea0252147b1",
+  "%protectiongroupid%": "System.Guid,4b3024d1-3fee-494b-9dab-5ea0252147b1",
+  "%biosid%": "System.Guid,<generate>",
+  "%managementid%": "System.Guid,<generate>",
+  "%agentversion%": "System.String,95000",
+  "%installationlocation%": "System.String,C:\\\\Program Files (x86)\\\\Microsoft Azure Site Recovery",
+  "%sourcebloburi%": "System.String,https://SampleBlobUri",
+  "%targetbloburi%": "System.String,https://SampleBlobUri",
+  "%sourcestorageaccountarmid%": "System.String,/subscriptions/c383865e-6077-46f2-a3b1-deb0f4f4650a/resourceGroups/Default-Storage-SoutheastAsia/providers/Microsoft.ClassicStorage/storageAccounts/chpadhseastandard",
+  "%targetstorageaccountarmid%": "System.String,/subscriptions/c283865e-6077-46f2-a3b1-deb0f4f4650a/resourceGroups/Default-Storage-SoutheastAsia/providers/Microsoft.ClassicStorage/storageAccounts/chpadhseastandard",
+  "%logstorageaccountarmid%": "System.String,/subscriptions/c183865e-6077-46f2-a3b1-deb0f4f4650a/resourceGroups/Default-Storage-SoutheastAsia/providers/Microsoft.ClassicStorage/storageAccounts/chpadhseastandard"
+}

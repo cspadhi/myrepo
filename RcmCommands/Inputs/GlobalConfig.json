@@ -1,0 +1,14 @@
+{
+  "%serviceurl%": "System.String,https://minint-chpadh1:92",
+  "%containerid%": "System.String,713743",
+  "%resourceid%": "System.String,8194065407602781693",
+  "%resourcelocation%": "System.String,westus",
+  "%gatewayid%": "System.Guid,76729c9c-8220-4428-b472-b60f82872647",
+  "%protectionservicelocation%": "System.String,sea",
+  "%protectionserviceuri%": "System.String,https://sea-bvtd2-prot2-t56tl.cloudapp.net",
+  "%queuename%": "System.String,minint-chpadhcontroltestqueue",
+  "%servicebusconnectionstringsecretname%": "System.String,NamespaceConnectionString",
+  "%azurekeyvaulturi%": "System.String,https://gatewaykeyvaultonebox.vault.azure.net",
+  "%tenantid%": "System.String,9b0c2069-2eba-489f-95f4-eca15cb602ab",
+  "%objectid%": "System.String,f18bc86b-a67b-446c-8996-f2f2b1417036"
+}

@@ -1,0 +1,7 @@
+{
+  "AgentVersion": "%agentversion%",
+  "DriverVersion": "1.0",
+  "FriendlyName": "Test-W2K12R2",
+  "Id": "%machineid%",
+  "InstallationLocation": "%installationlocation%"
+}

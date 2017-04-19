@@ -1,0 +1,6 @@
+{
+  "Id": "%gatewayid%",
+  "QueueName": "%queuename%",
+  "ServiceBusConnectionStringSecretName": "%servicebusconnectionstringsecretname%",
+  "AzureKeyVaultUri": "%azurekeyvaulturi%"
+}

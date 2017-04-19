@@ -1,0 +1,88 @@
+{
+  "Id": "%machineid%",
+  "FriendlyName": "Test-W2K12R2",
+  "BiosId": "%biosid%",
+  "ManagementId": "%managementid%",
+  "OperatingSystemType": "Windows",
+  "OsName": "W2K12R2",
+  "OsDescription": "Microsoft Windows Server 2012 R2 Standard",
+  "OsArchitecture": "x64",
+  "OsEndianness": "BigEndian",
+  "OsMajorVersion": "6",
+  "OsMinorVersion": "2",
+  "OsBuildVersion": "Windows NT 6.2Build 9200",
+  "VirtualizationPlatform": "Vmware",
+  "VirtualizationPlatformVersion": "6.0",
+  "OsVolumeDiskExtents": "1024, 3196",
+  "DiskInputs": [
+    {
+      "Id": "{605934578}",
+      "DeviceNames": [ "\\\\.\\PHYSICALDRIVE0", "36000c29d5e4685c9ea3ff9814feab2a0" ],
+      "Capacity": 20480,
+      "SectorSize": 512,
+      "DiskWriteCacheState": "Enabled",
+      "ScsiBus": 0,
+      "ScsiLogicalUnit": 1,
+      "ScsiPort": 2,
+      "ScsiTargetId": 3,
+      "FileSystem": null,
+      "FreeSpace": 1024,
+      "IsSystemDisk": true,
+      "IsBootDisk": true,
+      "MountPoint": null,
+      "DiskType": "Basic",
+      "DiskPartitioningScheme": "Mbr",
+      "DiskGroupId": null
+    },
+    {
+      "Id": "{368381605}",
+      "DeviceNames": [ "\\\\.\\PHYSICALDRIVE1", "36000c29b3488913d878b3c83fd413ced" ],
+      "Capacity": 40960,
+      "SectorSize": 512,
+      "DiskWriteCacheState": "Unknown",
+      "ScsiBus": 0,
+      "ScsiLogicalUnit": 2,
+      "ScsiPort": 3,
+      "ScsiTargetId": 0,
+      "FileSystem": null,
+      "FreeSpace": 20480,
+      "IsSystemDisk": true,
+      "IsBootDisk": false,
+      "MountPoint": null,
+      "DiskType": "Basic",
+      "DiskPartitioningScheme": "Mbr",
+      "DiskGroupId": "Dg0"
+    }
+  ],
+  "PartitionInputs": [
+    {
+      "Id": "\\\\?\\Volume{fe344122-377a-11e5-8260-3417ebad64c0}\\",
+      "Label": "System",
+      "DeviceNames": [ "C" ],
+      "Capacity": 10240,
+      "FreeSpace": 200,
+      "ParentDisk": "{605934578}",
+      "FileSystem": "NTFS",
+      "MountPoint": "C",
+      "DiskGroupId": null
+    }
+  ],
+  "LogicalVolumes": [
+    {
+      "Id": "\\\\?\\Volume{665b9b24-309a-11e5-825c-806e6f6e6963}\\",
+      "Label": "New Volume",
+      "DeviceNames": [ "E" ],
+      "Capacity": 20480,
+      "FreeSpace": 100,
+      "ParentDisks": [ "{368381605}" ],
+      "DiskGroupId": "Dg0",
+      "FileSystem": "NTFS",
+      "MountPoint": "E"
+    }
+  ],
+  "DiskGroups": [
+    {
+      "Id": "Dg0"
+    }
+  ]
+}

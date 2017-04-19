@@ -1,0 +1,39 @@
+{
+  "ProtectionPairId": "%protectionpairid%",
+  "ProtectionGroupId": "%protectiongroupid%",
+  "SourceMachineId": "%machineid%",
+  "GatewayProperties": {
+    "GatewayId": "%gatewayid%"
+  },
+  "ProtectionServiceUri": "%protectionserviceuri%",
+  "IsCompressionEnabled": true,
+  "IsEncryptionOverWireEnabled": true,
+  "ReplicationPairs": [
+    {
+      "SourceDiskId": "{368381605}",
+      "SourceBlobId": "%sourcebloburi%",
+      "TargetBlobUri": "%targetbloburi%",
+      "SourceDataStoreId": "%sourcestorageaccountarmid%",
+      "TargetStorageAccountArmId": "%targetstorageaccountarmid%",
+      "LogStorageId": "%logstorageaccountarmid%"
+    },
+    {
+      "SourceDiskId": "{605934578}",
+      "SourceBlobId": "%sourcebloburi%",
+      "TargetBlobUri": "%targetbloburi%",
+      "SourceDataStoreId": "%sourcestorageaccountarmid%",
+      "TargetStorageAccountArmId": "%targetstorageaccountarmid%",
+      "LogStorageId": "%logstorageaccountarmid%"
+    }
+  ],
+  "InformationalQueueConfig": {
+    "KeyVaultUri": "KeyVaultUri",
+    "QueueName": "QueueName",
+    "ConnectionStringSecretName": "ConnectionStringSecretName"
+  },
+  "CriticalQueueConfig": {
+    "KeyVaultUri": "KeyVaultUri",
+    "QueueName": "QueueName",
+    "ConnectionStringSecretName": "ConnectionStringSecretName"
+  }
+}

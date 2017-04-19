@@ -1,0 +1,10 @@
+{
+  "ResourceLocation": "%resourcelocation%",
+  "ResourceId": "%resourceid%",
+  "ContainerId": "%containerid%",
+  "ContainerUniqueName": "7b113778-9c44-539b-98de-71a5aa7f47c6_d9cbc2cd-8a3c-4222-bfa9-7fee17bb81bd_42657405-545e-5881-ab0f-2c24197a384b_d9cbc2cd-8a3c-4222-bfa9-7fee17bb81bd",
+  "TenantId": "%tenantid%",
+  "ObjectId": "%objectid%",
+  "Audience": "https://RecoveryServiceContainer/westus/8194065407602781693/713743",
+  "ProtectionServiceUri": "%protectionserviceuri%"
+}

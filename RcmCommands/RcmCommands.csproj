@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- BEGIN: Import references to common properties. -->
+  <Import Project="$(INETROOT)\RecSrv.props" Condition="'$(INETROOT)' != ''" />
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), `msbuildroot.marker`))\RecSrv.props" Condition="'$(INETROOT)' == ''" />
+  <!-- END: Import references to common properties. -->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B942524C-18E5-4C63-BF35-298966F448BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RcmCommands</RootNamespace>
+    <AssemblyName>RcmCommands</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.PowerShell.5.ReferenceAssemblies">
+      <HintPath>$(NuGetRoot)\Microsoft.PowerShell.5.ReferenceAssemblies.1.0.0\lib\net4\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\CompleteResyncCmdlet.cs" />
+    <Compile Include="Commands\GetInputCmdlet.cs" />
+    <Compile Include="Commands\GetJobCmdlet.cs" />
+    <Compile Include="Commands\GetMachineCmdlet.cs" />
+    <Compile Include="Commands\GetMachinesForManagementIdCmdlet.cs" />
+    <Compile Include="Commands\GetProtectionGroupRecoveryPointsCmdlet.cs" />
+    <Compile Include="Commands\GetProtectionPairRecoveryPointsCmdlet.cs" />
+    <Compile Include="Commands\GetRecoveryPointCmdlet.cs" />
+    <Compile Include="Commands\GetReplicationSettingsCmdlet.cs" />
+    <Compile Include="Commands\GetWorkflowCmdlet.cs" />
+    <Compile Include="Commands\NewGatewayServiceCmdlet.cs" />
+    <Compile Include="Commands\NewIdentityCmdlet.cs" />
+    <Compile Include="Commands\NewLogContainerSasUriCmdlet.cs" />
+    <Compile Include="Commands\NewMachineCmdlet.cs" />
+    <Compile Include="Commands\NewProtectionCmdlet.cs" />
+    <Compile Include="Commands\NewProtectionGroupCmdlet.cs" />
+    <Compile Include="Commands\NewSourceAgentCmdlet.cs" />
+    <Compile Include="Commands\RemoveGatewayServiceCmdlet.cs" />
+    <Compile Include="Commands\RemoveIdentityCmdlet.cs" />
+    <Compile Include="Commands\RemoveMachineCmdlet.cs" />
+    <Compile Include="Commands\RemoveProtectionCmdlet.cs" />
+    <Compile Include="Commands\RemoveProtectionGroupCmdlet.cs" />
+    <Compile Include="Commands\RemoveSourceAgentCmdlet.cs" />
+    <Compile Include="Commands\SetResyncRequiredCmdlet.cs" />
+    <Compile Include="Commands\StartCommitFailoverToAzureCmdlet.cs" />
+    <Compile Include="Commands\StartFailoverToAzureCmdlet.cs" />
+    <Compile Include="Commands\StartReplicationCmdlet.cs" />
+    <Compile Include="Commands\StartResyncCmdlet.cs" />
+    <Compile Include="Commands\StartTestFailoverToAzureCmdlet.cs" />
+    <Compile Include="Commands\StopFailoverToAzureCmdlet.cs" />
+    <Compile Include="Commands\StopTestFailoverToAzureCmdlet.cs" />
+    <Compile Include="Commands\UpdateAgentJobStatusCmdlet.cs" />
+    <Compile Include="Commands\UpdateJobStatusCmdlet.cs" />
+    <Compile Include="Commands\UpdateMachineCmdlet.cs" />
+    <Compile Include="Commands\UpdateProtectionGroupCmdlet.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="PSRcmClient.cs" />
+    <Compile Include="RcmCmdletBase.cs" />
+    <Compile Include="RcmParameterSets.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Clients\RcmClientLib\RcmClientLib.csproj">
+      <Project>{d872880d-3e8f-4b0f-8dde-a1c6d7a72889}</Project>
+      <Name>RcmClientLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Service\RcmContract\RcmContract.csproj">
+      <Project>{2c6dc28c-0f3d-4cd1-8370-4ffcfb7a0542}</Project>
+      <Name>RcmContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Service\RcmLogger\RcmLogger.csproj">
+      <Project>{6c56f6cc-4a9e-4a45-adec-0f6964cf54a9}</Project>
+      <Name>RcmLogger</Name>
+    </ProjectReference>  
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Inputs\CreateProtectionGroupInput.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\DisableProtectionInput.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\EnableProtectionToAzureInput.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\GlobalConfig.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\LocalConfig.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\RegisterGatewayServiceInput.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\RegisterIdentityInput.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\RegisterMachineInput.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\RegisterSourceAgentInput.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\RemoveProtectionGroupInput.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\StartReplicationInput.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\UnregisterIdentityInput.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\CommonLib.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Configuration.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\RcmCvt.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <!-- BEGIN: Import references to Recovery services private packages and their dependencies -->
+  <Import Project="$(CustomBuildTargets)\AzureStorageHelpers.targets" />
+  <Import Project="$(CustomBuildTargets)\ClientLib.targets" />
+  <Import Project="$(CustomBuildTargets)\Logging.targets" />
+  <!-- END: Import references to Recovery services private packages and their dependencies -->
+  <!-- BEGIN: Import references to common targets -->
+  <Import Project="$(BuildProcessRoot)\RecSrv.targets" />
+  <!-- END: Import references to common targets -->
+</Project>

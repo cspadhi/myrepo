@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Configuration>
+  <Commands>
+    <Command Active="N" Type="Sync" Cmd="New-Identity" InputFile="RegisterIdentityInput.json" Step="RegisterIdentity"/>
+    <Command Active="N" Type="Sync" Cmd="New-GatewayService" InputFile="RegisterGatewayServiceInput.json" Step="RegisterGatewayService"/>
+    <Command Active="Y" Type="Sync" Cmd="New-Machine" InputFile="RegisterMachineInput.json" Step="RegisterMachine"/>
+    <Command Active="Y" Type="Sync" Cmd="New-SourceAgent" InputFile="RegisterSourceAgentInput.json" Step="RegisterSourceAgent"/>
+    <Command Active="N" Type="Sync" Cmd="Get-MachinesForManagementId" InputFile="" Step="GetMachinesForManagementId"/>
+    <Command Active="N" Type="Sync" Cmd="Get-Machine" InputFile="" Step="GetMachineDetails"/>
+    <Command Active="N" Type="Sync" Cmd="New-ProtectionGroup" InputFile="CreateProtectionGroupInput.json" Step="CreateProtectionGroup"/>
+    <Command Active="N" Type="Async" Cmd="New-Protection" InputFile="EnableProtectionToAzureInput.json" Step="EnableProtectionToAzure"/>
+    <Command Active="N" Type="Async" Cmd="Start-Replication" InputFile="StartReplicationInput.json" Step="StartReplication"/>
+    <Command Active="N" Type="Sync" Cmd="Get-ProtectionPairRecoveryPoints" InputFile="" Step="GetProtectionPairRecoveryPoints"/>
+    <Command Active="N" Type="Async" Cmd="Start-TestFailoverToAzure" InputFile="StartTestFailoverToAzureInput.json" Step="StartTestFailoverToAzure"/>
+    <Command Active="N" Type="Async" Cmd="Stop-TestFailoverToAzure" InputFile="CancelTestFailoverToAzureInput.json" Step="CancelTestFailoverToAzure"/>
+    <Command Active="N" Type="Async" Cmd="Start-FailoverToAzure" InputFile="StartFailoverToAzureInput.json" Step="StartFailoverToAzure"/>
+    <Command Active="N" Type="Async" Cmd="Stop-FailoverToAzure" InputFile="CancelFailoverToAzureInput.json" Step="CancelFailoverToAzure"/>
+    <Command Active="N" Type="Async" Cmd="StartCommitFailoverToAzure" InputFile="CommitFailoverToAzureInput.json" Step="CommitFailoverToAzure"/>
+  </Commands>
+  <WorkflowIds>
+    <EnableProtectionToAzure></EnableProtectionToAzure>
+    <StartReplication></StartReplication>
+    <StartResync></StartResync>
+    <StartTestFailover></StartTestFailover>
+    <StartFailover></StartFailover>
+    <DisableProtection></DisableProtection>
+  </WorkflowIds>
+  <ProtectionData>
+    <MachineId></MachineId>
+    <ManagementId></ManagementId>
+    <ProtectionPairId></ProtectionPairId>
+    <ProtectionGroupId></ProtectionGroupId>
+  </ProtectionData>
+</Configuration>
