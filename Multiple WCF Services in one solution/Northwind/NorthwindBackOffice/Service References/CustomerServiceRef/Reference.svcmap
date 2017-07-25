@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4567efa2-f966-4a61-b4b0-bfec7ae564cb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.pipe://localhost/Services/CustomerService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="customer.wsdl" MetadataType="Wsdl" ID="cbfdddc2-3b93-45b3-9c07-28d90a9ef68f" SourceId="1" SourceUrl="net.pipe://localhost/Services/CustomerService/mex" />
+    <MetadataFile FileName="customer.xsd" MetadataType="Schema" ID="dc9603c1-07a3-4efd-93db-a7d1483b6a2f" SourceId="1" SourceUrl="net.pipe://localhost/Services/CustomerService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="7cbb0d0f-c788-41ea-b889-bdd9160ed112" SourceId="1" SourceUrl="net.pipe://localhost/Services/CustomerService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
