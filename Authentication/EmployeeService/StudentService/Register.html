@@ -85,11 +85,10 @@
                         $('#successModal').modal('show');
                     },
                     error: function (jqXHR) {
-                        $('#diverrorText').text(jqXHR.responseText);
-                        $('#diverrorText').show('fade');
+                        $('#divErrorText').text(jqXHR.responseText);
+                        $('#divError').show('fade');
                     }
                 });
-                // $('#successModal').modal('show');
             });
         });
     </script>
